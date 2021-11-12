@@ -1,34 +1,37 @@
 *{
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
      /* font-family: 'Times New Roman', Times, serif; */
 }
 
 body{
     background-color: rgba(69, 178, 241, 0.829);
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center; */
+    /* text-align: center; */
     min-height: 300vh;
     overflow: hidden;
 }
 
 #clock-container{
-    width: 300px;
-    height: 300px;
+    /* width: 300px; */
+    /* height: 300px;/ */
     background-color: rgb(225, 225, 225,0.8);
     /* display: flex;
-    justify-content: center;
-    text-align: center; */
+    justify-content: center; */
+    text-align: center;
     
-    position: relative;
+    /* position: relative; */
     border: 2px solid black;
     border-radius: 50%;
     position: relative;
-width: 38vw;
-    height: 38vw;
+width: 350px;
+    height: 350px;
     /* background: url(https://tse4.mm.bing.net/th?id=OIP.rtP-vW_wT_RNiGEA-U7BNwHaHa&pid=Api&P=0&w=300&h=300) no-repeat; */
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10%;
     /* border: 2px solid red; */
     background-size:100%;
 }
@@ -40,7 +43,9 @@ width: 38vw;
     height: 100%;
     text-align: center;
     transform: rotate(var(--rotation));
-    font-size: 2em;
+    font-size: auto;
+    /* margin: 5px; */
+    padding: 10px;
 }
 .number1{  --rotation: 30deg;}
 .number2{  --rotation: 60deg;}
@@ -107,4 +112,22 @@ width: 38vw;
     top: 50.5%;
     border-radius:50%;
     background-color: black;
+}
+.display-4{
+    text-align: center;
+    margin-top: 2%;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(231, 225, 225);
+    border-radius: 10px;
+/* height: 20px; */
+/* width: 500px; */
+}
+.container{
+    /* max-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
